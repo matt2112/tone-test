@@ -1,0 +1,25 @@
+{
+  "name": "tone-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "NODE_ENV=production npm run clean && webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "author": "Matt Lewis",
+  "license": "ISC",
+  "dependencies": {
+    "tone": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.8",
+    "html-webpack-plugin": "^2.26.0",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
